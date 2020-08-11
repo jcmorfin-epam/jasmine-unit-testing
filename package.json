@@ -1,0 +1,43 @@
+{
+  "name": "jasmineunittest",
+  "version": "1.0.0",
+  "description": "calculator using jasmine",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "jasmine": "^3.6.1",
+    "nyc": "^15.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine",
+    "coverage": "nyc npm run test"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "app/**/*.js"
+    ],
+    "excludes": [
+      "**/*.spec.js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcmorfin-epam/jasmine-unit-testing.git"
+  },
+  "author": "Carlos Morfín",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcmorfin-epam/jasmine-unit-testing/issues"
+  },
+  "homepage": "https://github.com/jcmorfin-epam/jasmine-unit-testing#readme"
+}
